@@ -61,9 +61,19 @@ if st.button('Predict'):
     result = model.predict(vector_input)[0]
     # 4. Display
     if result == 1:
-        st.header("🚫 Spam")
+        st.markdown("<h1 style='text-align: center; color: red;'>🚫 Spam</h1>", unsafe_allow_html=True)
+
     else:
-        st.header("✅Not Spam")
+        st.markdown("<h1 style='text-align: center; color: green;'>✅ Not Spam</h1>", unsafe_allow_html=True)
+
+# import streamlit as st
+
+# result = 1  # This is just an example; replace with your actual result
+
+# if result == 1:
+#     st.markdown("<h1 style='text-align: center; color: red;'>🚫 Spam</h1>", unsafe_allow_html=True)
+# else:
+#     st.markdown("<h1 style='text-align: center; color: green;'>✅ Not Spam</h1>", unsafe_allow_html=True)
 
 
 # import nltk
