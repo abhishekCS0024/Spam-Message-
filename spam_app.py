@@ -16,6 +16,9 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 import string
 
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 # Initialize the stemmer
 ps = PorterStemmer()
 
